@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Khair Studios - Designing the Future of Islamic Digital Spaces. We build modern Islamic tech like Namaz.app to empower the global Ummah.">
+    <meta name="keywords"
+        content="islamic tech, khair studios, namaz app, muslim apps, digital quran, prayer times, islamic ecosystem, technology for muslims">
+    <title>Khair Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="glass-overlay"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo-wrapper">
+                <img src="imgs/khair-logo.png" alt="Khair Studios Logo" class="logo-img">
+                <span class="logo-text">Khair Studios</span>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#manifesto">Manifesto</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="manifesto" class="hero">
+            <div class="container hero-content">
+                <div class="chips-container">
+                    <span class="chip">FAITH</span>
+                    <span class="chip-dot">&bull;</span>
+                    <span class="chip">TECHNOLOGY</span>
+                    <span class="chip-dot">&bull;</span>
+                    <span class="chip">EXCELLENCE</span>
+                </div>
+
+                <h1>Designing the Future of <br><span class="highlight">Islamic Digital Spaces</span></h1>
+
+                <p>We craft meaningful digital experiences that empower the global Muslim community. Where authentic
+                    values meet world-class innovation.</p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Discover Our Work</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="product-showcase">
+            <div class="container">
+                <div class="glass-card">
+                    <div class="card-content">
+                        <div class="product-header">
+                            <span class="new-badge">New Release</span>
+                            <h2>Namaz.app</h2>
+                        </div>
+                        <p class="product-description">Get accurate prayer times, distraction-free Quran reading, and our unique Masjid Bookmark feature that shows Azan reminders and upcoming prayers right on your home screen.</p>
+
+                        <ul class="feature-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                Accurate Jamaat Timings
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                                Free Quran Reading
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M16 12a4 4 0 0 1-8 0"></path>
+                                </svg>
+                                Qibla Direction
+                            </li>
+                        </ul>
+
+                        <div class="store-buttons">
+                            <a href="https://namaz.app/" target="_blank" rel="noopener" class="btn btn-store">Download
+                                for iOS</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.namazapp.technologies313"
+                                target="_blank" rel="noopener" class="btn btn-store-outline">Download for Android</a>
+                        </div>
+                    </div>
+                    <div class="card-visual">
+                        <img src="imgs/app-left-view-portrait.png" alt="Namaz App Interface showing prayer times"
+                            class="app-mockup">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <a href="mailto:mohammedisohail313@gmail.com" class="email-link">mohammedisohail313@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Khair Studios. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+
+</html>
